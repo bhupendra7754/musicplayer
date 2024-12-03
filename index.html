@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div class="player">
+        <div class="header">
+            <span>My Music Player</span>
+        </div>
+
+        <div class="img">
+            <img src="https://via.placeholder.com/150" alt="Song Thumbnail" id="thumb">
+        </div>
+
+        <div class="details">
+            <h3 id="title">Song Title</h3>
+            <p id="musician">Artist Name</p>
+        </div>
+
+        <div class="action">
+            <button style="background-color: red;" id="prevBtn"><i class="bx bx-rewind"></i></button>
+            <button style="background-color: green;" id="playBtn"><i class="bx bx-play"></i></button>
+            <button style="background-color: blue;" id="nextBtn"><i class="bx bx-fast-forward"></i></button>
+        </div>
+
+        <div class="time">
+            <span id="start">00:00</span>
+            <input type="range" id="progress" value="0" max="100">
+            <span id="end">00:00</span>
+        </div>
+    </div>
+
+    <audio id="audio" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
